@@ -83,8 +83,8 @@ When a Blazor project is published, a *web.config* file is created with the foll
   * `application/octet-stream`
   * `application/wasm`
 * URL Rewrite Module rules are established:
-  * Serve the sub-directory where the app's static assets reside (*{ASSEMBLY NAME}/dist/{PATH REQUESTED}*).
-  * Create SPA fallback routing so that requests for non-file assets are redirected to the app's default document in its static assets folder (*{ASSEMBLY NAME}/dist/index.html*).
+  * Serve the sub-directory where the app's static assets reside (*wwwroot/{PATH REQUESTED}*).
+  * Create SPA fallback routing so that requests for non-file assets are redirected to the app's default document in its static assets folder (*wwwroot/index.html*).
 
 #### Install the URL Rewrite Module
 
